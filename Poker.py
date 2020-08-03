@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Nov 20 16:25:20 2018
-
-@author: uxac007
-"""
 
 
 from PokerHand import ThreeCardPokerDeck, ThreeCardPokerHand
 from Card import Card
 
-# Question 4
+
 def make_dist(n):
     """
     n, a positive integer
@@ -60,7 +55,7 @@ def make_dist(n):
 # in your play_round code 
 min_dealer_hand = ThreeCardPokerHand([Card(10, 0), Card(1, 1), Card(0, 2)])
 
-# Question 5
+
 def play_round(dealer_hand, player_hand, cash, get_ante, is_playing):
     """
     dealer_hand, an instance of ThreeCardPokerHand holding the
