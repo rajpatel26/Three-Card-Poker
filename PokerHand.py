@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Nov 20 12:47:22 2018
 
-@author: uxac007
-"""
 
 import copy
 from Card import Card, Hand, Deck
@@ -33,7 +29,7 @@ class ThreeCardPokerHand(Hand):
     all_labels = ['Nothing', 'Pair', 'Flush', 'Straight', 'Three of a Kind',
                   'Straight Flush']
     
-#   Question 2
+
     def _compute_rank(self):
         """
         self, this instance of ThreeCardPokerHand
@@ -55,7 +51,7 @@ class ThreeCardPokerHand(Hand):
         else:
             self.rank=0
         
-#   Question 3    
+    
     def _compare(self, other):
         """
         self, this instance of ThreeCardPokerHand
@@ -180,7 +176,7 @@ class ThreeCardPokerHand(Hand):
     def __le__(self, other):
         return True if self._compare(other) <= 0 else False
 
-#   Question 3
+
     def __gt__(self, other):
         """
         self, this instance of ThreeCardPokerHand
@@ -190,7 +186,7 @@ class ThreeCardPokerHand(Hand):
         return True if self._compare(other) > 0 else False
 
 
-#   Question 3    
+  
     def __ge__(self, other):
         """
         self, this instance of ThreeCardPokerHand
@@ -200,7 +196,7 @@ class ThreeCardPokerHand(Hand):
         """
         return True if self._compare(other) >= 0 else False
     
-#   Question 3    
+  
     def __eq__(self, other):
         """
         self, this instance of ThreeCardPokerHand
@@ -210,7 +206,7 @@ class ThreeCardPokerHand(Hand):
         """
         return True if self._compare(other) == 0 else False
 
-#   Question 3    
+  
     def __ne__(self, other):
         """
         self, this instance of ThreeCardPokerHand
