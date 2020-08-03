@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Nov 16 14:24:23 2018
-
-@author: uxac007
-"""
 
 import random
 import copy
@@ -25,7 +20,7 @@ class Card(object):
     def get_rank(self):
         return self.rank
     
-    #   Question 1
+    
     def get_suit(self):
         """
         Returns the value of the
@@ -33,7 +28,7 @@ class Card(object):
         """
         return self.suit
 
-#   add __str__
+
     def __str__(self):
         return Card.ranks[self.rank] + ' of ' + Card.suits[self.suit]
     
@@ -48,7 +43,7 @@ class Deck(object):
             for suit in range(len(Card.suits)):
                 self.cards.append(Card(rank, suit))
 
-    #   Question 1     
+         
     def shuffle(self):
         """
         Use the random.shuffle method
@@ -56,7 +51,7 @@ class Deck(object):
         """
         random.shuffle(self.cards)
         
-    #   Question 1 
+    
     def pop_cards(self, n):
         """
         n, positive integer.
@@ -82,7 +77,7 @@ class Deck(object):
         """
         self.cards.extend(copy.deepcopy(cards))
         
-    #   Question 1 
+    
     def clear_cards(self):
         """
         Clears the content of self.cards. Be
@@ -90,7 +85,7 @@ class Deck(object):
         """
         self.cards.clear()
         
-    #   Question 1 
+     
     def move_cards(self, hand, n):
         """
         hand, a Hand object
